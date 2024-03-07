@@ -6,7 +6,7 @@ body {
 }
 
 head {
-  background-color: #e8f1f2; /* Couleur pastel de fond */
+  background-color: #e1efca;
   height: 350px;
   display: flex;
   align-items: center;
@@ -14,8 +14,8 @@ head {
 }
 
 h1 {
-  color: #333; /* Couleur du texte */
-  font-size: 3em; /* Taille de la police du titre */
+  color: #333;
+  font-size: 3em;
 }
 
 .contact {
@@ -26,4 +26,55 @@ h1 {
 a {
   color: black;
   text-decoration: none;
+}
+.add-contact-btn {
+  background-color: #a99abd;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 16px;
+  display: inline-block;
+}
+
+/* Page ajout d'un nouveau contact  /*/
+.add-contact-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 50%;
+  margin: 50px auto;
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  display: grid;
+}
+
+label {
+  text-align: left;
+  padding-right: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #a99abd;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.back-btn {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
 }
