@@ -1,0 +1,12 @@
+<%- include('header.ejs') -%>
+
+<div class="contacts-container">
+  <% for (const contact of contacts) { %>
+    <div class="contact">
+      <a href="/detail/<%= contact.id %>"><%= contact.nom %> <%= contact.prenom %></a>
+    </div>
+  <% } %>
+</div>
+
+</body>
+</html>
