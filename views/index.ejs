@@ -1,12 +1,18 @@
-<%- include('header.ejs') -%>
+<!-- index.ejs -->
+
+<%- include('header') -%>
 
 <div class="contacts-container">
   <% for (const contact of contacts) { %>
     <div class="contact">
       <a href="/detail/<%= contact.id %>"><%= contact.nom %> <%= contact.prenom %></a>
+      <form action="/delete/<%= contact.id %>" method="post" class="delete-contact-form">
+        <button type="submit" class="delete-contact-btn">Supprimer</button>
+      </form>
     </div>
   <% } %>
 </div>
+
 <a href="/add" class="add-contact-btn">Ajouter un contact</a>
 
 </body>

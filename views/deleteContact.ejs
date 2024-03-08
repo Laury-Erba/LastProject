@@ -1,0 +1,18 @@
+<!-- deleteContact.ejs -->
+
+<%- include('header') -%>
+
+<div class="delete-contact-container">
+  <h2>Confirmation de suppression</h2>
+
+  <p>Êtes-vous sûr de vouloir supprimer le contact : <%= contact.nom %> <%= contact.prenom %> ?</p>
+
+  <form action="/delete/<%= contact.id %>" method="post">
+    <button type="submit">Oui, supprimer</button>
+  </form>
+
+  <a href="/" class="back-btn">Annuler et retourner à la liste des contacts</a>
+</div>
+
+</body>
+</html>
